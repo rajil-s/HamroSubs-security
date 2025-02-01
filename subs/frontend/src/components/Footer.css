@@ -1,0 +1,74 @@
+/* Footer Base Styles */
+.footer {
+    width: 100%;
+    background-color: #0A0F22;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+    box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Poppins', sans-serif;
+    margin-top: 50px; /* Pushes the footer down when content is short */
+}
+
+/* Footer Container */
+.footer-container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Logo */
+.footer-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
+/* Footer Text */
+.footer-text {
+    font-size: 14px;
+    opacity: 0.8;
+    margin-bottom: 15px;
+}
+
+/* Social Icons */
+.footer-socials {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.social-link {
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.social-link:hover {
+    color: #1DA1F2;
+    transform: translateY(-3px);
+}
+
+/* Copyright Text */
+.footer-copy {
+    font-size: 12px;
+    opacity: 0.6;
+}
+
+/* Make Footer Naturally Stay at the Bottom */
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-content {
+    flex: 1; /* Pushes the footer down when there isn't enough content */
+}
