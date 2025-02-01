@@ -1,0 +1,197 @@
+/* General Styling */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f7f7f7;
+    color: #333;
+    font-size: 16px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Table Styling */
+.cart-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.cart-container th, .cart-container td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.cart-container th {
+    background-color: #0A0F22;
+    color: white;
+    font-weight: bold;
+}
+
+.cart-container td img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* Quantity Buttons */
+.qty-btn {
+    background-color: #8C52FF;
+    color: #fff;
+    padding: 6px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.qty-btn:hover {
+    background-color: #5d0cff;
+}
+
+/* Delete Button */
+.btn-danger {
+    background-color: #dc3545;
+    border: none;
+    color: #fff;
+    padding: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+}
+
+/* Order Summary */
+.summary-container {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.summary-heading {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #8C52FF;
+}
+
+.summary {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.summary span {
+    color: #555;
+}
+
+/* Checkout Button */
+.btn-primary {
+    background-color: #8C52FF;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #5f0fff;
+}
+
+/* Popup Styling */
+.popup-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.popup h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #8C52FF;
+}
+
+.popup .payment-methods {
+    margin-bottom: 20px;
+}
+
+.popup .radio-group {
+    margin-bottom: 10px;
+}
+
+.popup .radio-group input {
+    margin-right: 10px;
+}
+
+.popup .popup-actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.popup-actions .btn-secondary {
+    background-color: #6c757d;
+    color: #fff;
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.popup-actions .btn-secondary:hover {
+    background-color: #5a6268;
+}
+
+.popup-actions .btn-primary {
+    flex-grow: 1;
+    margin-left: 10px;
+}
+
+/* Empty Cart Message */
+.text-center h2 {
+    font-size: 2rem;
+    color: #8C52FF;
+}
+
+.text-center p {
+    color: #555;
+    margin-bottom: 20px;
+}
