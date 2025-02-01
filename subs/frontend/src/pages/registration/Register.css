@@ -1,0 +1,104 @@
+/* General Styles */
+.registration-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9;
+    min-height: calc(100vh - 80px); /* Adjusted to avoid overflowing above navbar */
+    padding: 20px;
+    margin-top: 100px; /* Ensures it starts below the navbar */
+}
+
+.form-wrapper {
+    background: white;
+    padding: 30px 50px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+.form-wrapper h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #8C52FF;
+    font-weight: bold;
+}
+
+.registration-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #444;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+.form-group-horizontal {
+    display: flex;
+    gap: 10px;
+}
+
+.form-group-horizontal .form-group {
+    flex: 1;
+}
+
+.create-account-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #0A0F22;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+    font-weight: bold;
+}
+
+.create-account-btn:hover {
+    background-color: #1b2754;
+}
+
+.login-redirect {
+    margin-top: 15px;
+    font-size: 1rem;
+    color: #666;
+}
+
+.login-redirect a {
+    color: #8C52FF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-redirect a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .form-wrapper {
+        padding: 20px;
+    }
+    .form-group-horizontal {
+        flex-direction: column;
+        gap: 0;
+    }
+}
