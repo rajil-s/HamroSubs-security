@@ -1,0 +1,60 @@
+/* CSS */
+.update-product-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.update-product-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.update-product-wrapper {
+    display: flex;
+    gap: 20px;
+}
+
+.update-product-form {
+    flex: 1;
+    max-width: 400px;
+}
+
+.update-product-image-preview {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    padding: 5px;
+}
+
+.product-image.preview {
+    width: 300px;
+    height: 375px;
+}
+
+.text-purple {
+    color: #8C52FF;
+}
+
+.btn-purple {
+    background-color: #8C52FF;
+    color: #fff;
+    border: none;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.btn-purple:hover {
+    background-color: #7A47E0;
+}

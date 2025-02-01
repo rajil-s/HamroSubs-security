@@ -1,0 +1,5 @@
+#8C52FF light purple
+#0A0F22 dark blue
+
+
+#D29062

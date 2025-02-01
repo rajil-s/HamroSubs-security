@@ -1,0 +1,125 @@
+/* General Styles */
+.page-container {
+    background-color: #f7f9fc;
+    min-height: 100vh;
+    padding: 2rem;
+}
+
+.order-list-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.header {
+    color: #1a1a2e;
+    font-size: 2rem;
+    margin: 0;
+}
+
+.filter-select {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    background: white;
+}
+
+.order-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.order-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.order-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.order-id {
+    color: #8C52FF;
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.status {
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.status-pending {
+    background-color: #ff9800;
+}
+
+.status-confirm {
+    background-color: #2196F3;
+}
+
+.status-shipping {
+    background-color: #673AB7;
+}
+
+.status-delivered {
+    background-color: #4CAF50;
+}
+
+.status-cancel {
+    background-color: #f44336;
+}
+
+.order-info p {
+    margin: 0.5rem 0;
+    color: black;
+}
+
+.items-list {
+    list-style: none;
+    padding: 0;
+}
+
+.item {
+    background-color: #fdfdfd;
+    border-radius: 4px;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.product-image {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin-right: 1rem;
+    border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .filter-select {
+        margin-top: 10px;
+    }
+}
