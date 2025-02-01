@@ -1,0 +1,137 @@
+/* General Navbar Styles */
+.navbar-container {
+    background-color: #0A0F22;
+    color: white;
+    width: 100%;
+    padding: 10px 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.navbar-logo img {
+    height: 40px;
+}
+
+.navbar-brand {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar-brand span {
+    color: #7E55F1;
+}
+
+.navbar-toggler-icon {
+    background-color: white;
+}
+
+.nav-link,
+.nav-item .nav-link {
+    color: white;
+}
+
+.dropdown-toggle {
+    background-color: #7E55F1;
+    border: none;
+}
+
+.btn-custom,
+.btn-outline-custom {
+    padding: 8px 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    width: 100px;
+    margin-left: -10px;
+}
+
+.btn-custom {
+    background-color: #7E55F1;
+    border: none;
+    color: white;
+}
+
+.btn-custom:hover {
+    background-color: #5A3CCF;
+}
+
+.btn-outline-custom {
+    background-color: transparent;
+    border: 2px solid #7E55F1;
+    color: #7E55F1;
+}
+
+.btn-outline-custom:hover {
+    background-color: #7E55F1;
+    color: white;
+}
+
+/* Navbar Icons */
+.navbar-icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.fa-icon {
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.6rem;
+    /* Increase the font size of the icons */
+}
+
+/* Dropdown Menu Styles */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.user-icon {
+    cursor: pointer;
+    font-size: 1.7rem;
+    /* Increase the font size of the user icon */
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #1a1a2e;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu .dropdown-item {
+    color: #000000;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: #c9c9c9;
+}
+
+.dropdown-menu button {
+    background: none;
+    border: none;
+    color: inherit;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+}
