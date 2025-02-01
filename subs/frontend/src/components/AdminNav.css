@@ -1,0 +1,86 @@
+/* Sidebar Styles */
+.sidebar {
+    width: 250px;
+    height: 500%;
+    background: #0A0F22; /* Dark blue theme */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Logo Section */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.logo-img {
+    width: 40px;
+    height: 40px;
+}
+
+.logo-text {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: white;
+}
+
+/* Navigation List */
+.nav-list {
+    list-style: none;
+    padding: 0;
+}
+
+.nav-item {
+    margin-bottom: 15px;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    padding: 12px 15px;
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+/* Active Link */
+.nav-item.active .nav-link {
+    background: rgba(255, 255, 255, 0.25);
+    font-weight: bold;
+}
+
+/* Logout Button */
+.logout {
+    background: #D9534F;
+}
+
+.logout:hover {
+    background: #C9302C;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .sidebar {
+        width: 200px;
+        padding: 15px;
+    }
+
+    .logo-text {
+        font-size: 1.3rem;
+    }
+
+    .nav-link {
+        font-size: 0.9rem;
+    }
+}
