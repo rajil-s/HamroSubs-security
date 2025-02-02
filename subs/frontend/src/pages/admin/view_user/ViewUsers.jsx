@@ -130,7 +130,6 @@ const ViewUsers = () => {
                         </div>
                     </main>
                 </div>
-                <FooterCard />
             </div>
         </>
     );
